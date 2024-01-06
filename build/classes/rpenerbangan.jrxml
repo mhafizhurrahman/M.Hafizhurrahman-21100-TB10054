@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d96e4c86-e8cf-4cbf-b8bb-663eca84ad87">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="48"/>
+	<queryString language="SQL">
+		<![CDATA[select * from penerbangan]]>
+	</queryString>
+	<field name="id_penerbangan" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_penerbangan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kota_keberangkatan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kota_tujuan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tanggal_keberangkatan" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="harga" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="83" splitType="Stretch">
+			<staticText>
+				<reportElement x="220" y="25" width="143" height="20" uuid="43035b34-e0d7-417c-a0d0-56199673d452"/>
+				<textElement>
+					<font size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Report Penerbangan]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="29" y="15" width="27" height="20" uuid="68dd0ebd-920c-4e7f-b350-2cf69ee96437"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="133" y="15" width="75" height="20" uuid="8abf22b5-da4a-4ab5-a6e7-78a4aa6ee433"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[maskapai]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="288" y="15" width="75" height="20" uuid="4f3776c8-debb-47da-9615-63f90f1b1267"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[kota tujuan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="208" y="15" width="80" height="20" uuid="ca844e71-8dff-4927-9293-bb11265b5e2d"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[keberangkatan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="363" y="15" width="80" height="20" uuid="2a4cdb5a-d3be-4415-90d2-f52c27f85ce5"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[tgl berangkat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="443" y="15" width="75" height="20" uuid="4a89930a-d6e1-4927-b088-c053c5b3788f"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[harga]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-142" y="10" width="75" height="20" uuid="22667543-afe1-4e9c-9296-ed490bfe0451"/>
+				<text><![CDATA[id penerbangan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-142" y="10" width="75" height="20" uuid="359e4485-7cf8-4180-ad85-f3349cd41198"/>
+				<text><![CDATA[id penerbangan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="56" y="15" width="77" height="20" uuid="d71c6b94-f170-496d-91b1-c40a8f459ac1"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[id penerbangan]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<textField>
+				<reportElement x="29" y="0" width="27" height="20" uuid="36bd0b97-b825-4782-8988-36e2b143d328"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-142" y="10" width="75" height="20" uuid="b50d2208-6216-4738-835e-6f3c22fa181f"/>
+				<text><![CDATA[id penerbangan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-142" y="10" width="75" height="20" uuid="7a9f402d-79e7-46fc-ac7b-f37d0589c0ee"/>
+				<text><![CDATA[id penerbangan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-142" y="10" width="75" height="20" uuid="c262cd58-54b5-41cd-b5ce-2ee814e41f2e"/>
+				<text><![CDATA[id penerbangan]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="56" y="0" width="77" height="20" uuid="dd5c0303-884d-4cf2-a9b8-3fcf42c15ae1"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{id_penerbangan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="133" y="0" width="75" height="20" uuid="865e0512-dc1e-496f-a3bb-20f4fab45200"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nama_penerbangan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="208" y="0" width="80" height="20" uuid="bc851f60-b22d-4b51-8343-b63e30b2eb6a"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{kota_keberangkatan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="288" y="0" width="75" height="20" uuid="64e096f0-8558-4e76-b52e-110ff9dcac3d"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{kota_tujuan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="363" y="0" width="80" height="20" uuid="b35ac439-c455-4786-aed1-e68a3be237ca"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{tanggal_keberangkatan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="443" y="0" width="75" height="20" uuid="df49e4ca-f4a8-4c83-a913-3a056754bc87"/>
+				<box>
+					<pen lineWidth="0.75"/>
+					<topPen lineWidth="0.75"/>
+					<leftPen lineWidth="0.75"/>
+					<bottomPen lineWidth="0.75"/>
+					<rightPen lineWidth="0.75"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{harga}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
